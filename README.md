@@ -1,18 +1,8 @@
-# Data Dictionary
-This project allows for the maintenance of a basic data dictionary for a back-end data storage schema. Such schema may consist of:
+# Paperclip
+This project aims to make it easier to keep track of project documents. They may be stored in a dedicated cloud or network drive, but eventually, either by necessity or otherwise, documents can wind up scattered across these storage media, local drives and other places.
 
-- __ISAM__ files
-- __MySQL__ tables
-- __JSON__ files
-- __XML__ files
+[Paperclip](https://github.com/mikeigoe/paperclip) seeks to explore alternative mechanism for managing project documentation by providing a Single Page Application where metadata describing the location, author, creation time and media of the document are stored in a light-weight no-SQL database (**MongoDB** is currently proposed).
 
-## Table Format
+The project also aims to leverage **GraphQL** to widen the scope of what can be tracked in the project database.
 
-| **Item** | **Type** | **Format** | **Length** | **Required** | **Description** | **Example** | **Validation** |
--- |-- |-- |-- |-- |-- |-- |-- |
-ID | `int` | N | | Y | Unique Identifier | | Assigned by database | | Auto generated |
-Forename | `string` | | 30 | Y |
-Surname | `string` | | 30 | Y |
-Staff No | `string` | NNNNN | 6 | Y | 6 character alphanumeric | 01234A | |
-PPSN | `string` | NNNNNNNAA | 8-9 | Y | Personal Public Service Number | 1234567A | `mod` 23 with check character 
-
+The application should ideally be able to retrieve the requested document if technology and permissions allow.

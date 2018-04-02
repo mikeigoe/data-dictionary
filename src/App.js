@@ -16,7 +16,6 @@ class App extends Component {
             <div>
               <img src={logo} className="App-logo" alt="logo" align="left"/>
               <h1 className="App-title">PAPERCLIP</h1>
-              <p className="App-subtitle">We can't keep all your documents in one place, but we can help you fetch them from one place.</p>
             </div>
           </header>
           <DocForm />
