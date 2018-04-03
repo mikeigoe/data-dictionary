@@ -24,13 +24,12 @@
   font-size: 45px;
 }
 
-.App-subtitle {
-  font-family: 'roboto';
-  font-size: 18px;
-}
-
 .App-intro {
   font-size: large;
+}
+
+.h1 {
+  font-family: 'Saira Condensed';
 }
 
 @keyframes App-logo-spin {

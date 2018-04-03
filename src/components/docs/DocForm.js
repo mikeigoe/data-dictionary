@@ -33,7 +33,7 @@ class DocForm extends Component {
   render() {
     return (
       <div>
-        <h1>Add Document</h1>
+        <h2>Add Document</h2>
         <form onSubmit={this.onSubmit}>
           <div>
             <label>Title: </label>

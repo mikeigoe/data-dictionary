@@ -12,12 +12,14 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <header className="App-header">
-            <div>
-              <img src={logo} className="App-logo" alt="logo" align="left"/>
-              <h1 className="App-title">PAPERCLIP</h1>
-            </div>
-          </header>
+          <div>
+            <header className="App-header">
+              <div>
+                <img src={logo} className="App-logo" alt="logo" align="left"/>
+                <h1 className="App-title">PAPERCLIP</h1>
+              </div>
+            </header>
+          </div>
           <DocForm />
           <hr />
           <Docs />
